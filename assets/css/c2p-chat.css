@@ -1,0 +1,101 @@
+.c2p-chat {
+    border: 1px solid #2f2f37;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #11141c;
+    color: #f5f5f7;
+    max-width: 480px;
+}
+
+.c2p-chat--empty {
+    text-align: center;
+    font-style: italic;
+}
+
+.c2p-chat__header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .75rem;
+}
+
+.c2p-chat__match-selector {
+    background: #1f2230;
+    border: 1px solid #3c3f4e;
+    color: inherit;
+    padding: .25rem .5rem;
+    border-radius: 4px;
+}
+
+.c2p-chat__match-name {
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.c2p-chat__messages {
+    height: 220px;
+    overflow-y: auto;
+    background: #0b0d13;
+    border: 1px solid #1f2331;
+    border-radius: 6px;
+    padding: .5rem;
+    margin-bottom: .75rem;
+}
+
+.c2p-chat__message {
+    margin-bottom: .65rem;
+    padding-bottom: .35rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.c2p-chat__message:last-child {
+    border-bottom: 0;
+}
+
+.c2p-chat__message-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: .75rem;
+    opacity: .8;
+}
+
+.c2p-chat__message-body {
+    margin-top: .25rem;
+    font-size: .9rem;
+    word-break: break-word;
+}
+
+.c2p-chat__form {
+    display: flex;
+    gap: .5rem;
+}
+
+.c2p-chat__input {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #3c3f4e;
+    background: #1a1d29;
+    color: inherit;
+    padding: .45rem .6rem;
+}
+
+.c2p-chat__button {
+    border: none;
+    border-radius: 4px;
+    padding: .45rem .85rem;
+    background: #ff7f27;
+    color: #10131c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.c2p-chat__button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.c2p-chat__hint {
+    margin-top: .75rem;
+    font-size: .75rem;
+    opacity: .7;
+}

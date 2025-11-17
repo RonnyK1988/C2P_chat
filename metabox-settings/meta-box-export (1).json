@@ -1,0 +1,1122 @@
+[
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Hintergrund Header",
+                "id": "hintergrund_header",
+                "type": "single_image",
+                "image_size": "medium",
+                "required": true
+            },
+            {
+                "name": "Plattform",
+                "id": "plattform",
+                "type": "select",
+                "options": {
+                    "PC": "PC",
+                    "Konsole": "Konsole",
+                    "PC & Konsole": "PC & Konsole"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Startdatum und Zeit",
+                "id": "startdatum_und_zeit",
+                "type": "datetime",
+                "label_description": "Der Starttag markiert den ersten Spieltag und -zeit",
+                "save_format": "d.m.Y H:i",
+                "timestamp": true,
+                "inline": false,
+                "required": true,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "timeFormat": "HH:mm",
+                    "changeYear": true,
+                    "yearRange": "-100:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true,
+                    "firstDay": 1,
+                    "controlType": "select",
+                    "oneLine": true
+                }
+            },
+            {
+                "name": "Enddatum",
+                "id": "enddatum",
+                "type": "datetime",
+                "label_description": "Der Starttag markiert den ersten Spieltag und -zeit",
+                "save_format": "d.m.Y H:i",
+                "timestamp": true,
+                "inline": false,
+                "required": true,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "timeFormat": "HH:mm",
+                    "changeYear": true,
+                    "yearRange": "-100:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true,
+                    "firstDay": 1,
+                    "controlType": "select",
+                    "oneLine": true
+                }
+            },
+            {
+                "name": "Modus",
+                "id": "modus",
+                "type": "select",
+                "options": {
+                    "1": "1on1",
+                    "2": "2on2",
+                    "3": "3on3",
+                    "4": "4on4",
+                    "5": "5on5",
+                    "6": "6on6"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Allgemeines Regelwerk",
+                "id": "regelwerk",
+                "type": "url"
+            },
+            {
+                "name": "Spiel Regelwerk",
+                "id": "regelwerk_spiel",
+                "type": "url"
+            },
+            {
+                "type": "post",
+                "id": "draft_matches",
+                "name": "Unplayed Matches",
+                "post_type": [
+                    "match"
+                ],
+                "multiple": true,
+                "field_type": "select_advanced"
+            }
+        ],
+        "id": "ligenfelder-kopieren",
+        "modified": 1762695585,
+        "post_types": [
+            "matchmaker"
+        ],
+        "title": "Matchmaker felder"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "type": "taxonomy",
+                "id": "game",
+                "name": "Game",
+                "taxonomy": [
+                    "game"
+                ]
+            },
+            {
+                "type": "checkbox_list",
+                "id": "5_maps",
+                "name": "Maps COD:BO6",
+                "options": {
+                    "Derelict": "Derelict",
+                    "Hacienda": "Hacienda",
+                    "Grind": "Grind",
+                    "Lowtown": "Lowtown",
+                    "Payback": "Payback",
+                    "Protocol": "Protocol",
+                    "Red Card": "Red Card",
+                    "Rewind": "Rewind",
+                    "Scud": "Scud",
+                    "Skyline": "Skyline",
+                    "Subsonic": "Subsonic",
+                    "Vault": "Vault",
+                    "Vorkuta": "Vorkuta"
+                },
+                "select_all_none": true,
+                "visible": [
+                    "game",
+                    5
+                ]
+            },
+            {
+                "type": "checkbox_list",
+                "id": "29_maps",
+                "name": "Maps COD:BO7",
+                "options": {
+                    "Derelict": "Derelict",
+                    "Hacienda": "Hacienda",
+                    "Grind": "Grind",
+                    "Red Card": "Red Card",
+                    "Rewind": "Rewind",
+                    "Scud": "Scud",
+                    "Skyline": "Skyline",
+                    "Subsonic": "Subsonic",
+                    "Vault": "Vault",
+                    "Vorkuta": "Vorkuta"
+                },
+                "select_all_none": true,
+                "visible": [
+                    "game",
+                    29
+                ]
+            }
+        ],
+        "id": "game-and-maps-field",
+        "modified": 1762118997,
+        "post_types": [
+            "matchmaker",
+            "liga",
+            "turnier"
+        ],
+        "title": "Game and Maps field"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Position",
+                "id": "position",
+                "type": "text"
+            },
+            {
+                "name": "Bild für Teamseite",
+                "id": "bild_fuer_teamseite",
+                "type": "single_image"
+            },
+            {
+                "type": "text",
+                "id": "team_reihenfolge",
+                "name": "Team Reihenfolge",
+                "std": 99
+            }
+        ],
+        "id": "user-admin-fields",
+        "include": {
+            "user_role": [
+                "administrator",
+                "editor"
+            ]
+        },
+        "modified": 1756461036,
+        "title": "User Admin Fields",
+        "type": "user"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Hintergrund Header",
+                "id": "hintergrund_header",
+                "type": "single_image",
+                "image_size": "medium",
+                "required": true
+            },
+            {
+                "name": "Plattform",
+                "id": "plattform",
+                "type": "select",
+                "options": {
+                    "PC": "PC",
+                    "Konsole": "Konsole",
+                    "PC & Konsole": "PC & Konsole"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Anmeldefrist",
+                "id": "anmeldefrist",
+                "type": "datetime",
+                "save_format": "d.m.Y H:i",
+                "timestamp": true,
+                "inline": false,
+                "required": true,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "timeFormat": "HH:mm",
+                    "changeYear": true,
+                    "yearRange": "-100:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true,
+                    "firstDay": 1,
+                    "controlType": "select",
+                    "oneLine": true
+                }
+            },
+            {
+                "name": "Startdatum und Zeit",
+                "id": "startdatum_und_zeit",
+                "type": "datetime",
+                "label_description": "Der Starttag markiert den ersten Spieltag und -zeit",
+                "save_format": "d.m.Y H:i",
+                "timestamp": true,
+                "inline": false,
+                "required": true,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "timeFormat": "HH:mm",
+                    "changeYear": true,
+                    "yearRange": "-100:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true,
+                    "firstDay": 1,
+                    "controlType": "select",
+                    "oneLine": true
+                }
+            },
+            {
+                "name": "Modus",
+                "id": "modus",
+                "type": "select",
+                "options": {
+                    "2": "2on2",
+                    "3": "3on3",
+                    "4": "4on4",
+                    "5": "5on5",
+                    "6": "6on6"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Anzahl Teams",
+                "id": "anzahl_teams",
+                "type": "number",
+                "min": 2,
+                "step": 1,
+                "required": true
+            },
+            {
+                "name": "Preisgeld",
+                "id": "preisgeld",
+                "type": "group",
+                "fields": [
+                    {
+                        "name": "Gesamt",
+                        "id": "gesamt",
+                        "type": "number"
+                    },
+                    {
+                        "name": 1,
+                        "id": "platz_1",
+                        "type": "number"
+                    },
+                    {
+                        "name": 2,
+                        "id": "platz_2",
+                        "type": "number"
+                    },
+                    {
+                        "name": 3,
+                        "id": "platz_3",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "name": "Allgemeines Regelwerk",
+                "id": "regelwerk",
+                "type": "url"
+            },
+            {
+                "name": "Spiel Regelwerk",
+                "id": "regelwerk_spiel",
+                "type": "url"
+            },
+            {
+                "name": "Matchdays",
+                "id": "matchdays",
+                "type": "group",
+                "clone": true,
+                "fields": [
+                    {
+                        "name": "Spieltag",
+                        "id": "spieltag",
+                        "type": "text"
+                    },
+                    {
+                        "name": "Matches",
+                        "id": "matches",
+                        "type": "post",
+                        "post_type": [
+                            "match"
+                        ],
+                        "add_new": false,
+                        "multiple": true,
+                        "select_all_none": false,
+                        "parent": false
+                    }
+                ]
+            },
+            {
+                "name": "Gestartet",
+                "id": "gestartet",
+                "type": "checkbox",
+                "std": false
+            },
+            {
+                "name": "Beendet",
+                "id": "beendet",
+                "type": "checkbox",
+                "std": false
+            }
+        ],
+        "id": "acf_group_67e1d77d549f4",
+        "modified": 1762112482,
+        "post_types": [
+            "liga"
+        ],
+        "title": "Ligenfelder"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Teamkürzel/Clantag",
+                "id": "clantag",
+                "type": "text"
+            },
+            {
+                "name": "Header Background",
+                "id": "header_background",
+                "type": "single_image",
+                "image_size": "2048x2048",
+                "columns": 6
+            },
+            {
+                "type": "color",
+                "id": "team_name_farbe",
+                "name": "Team Name Farbe",
+                "std": "#000",
+                "columns": 6
+            },
+            {
+                "name": "Twitch",
+                "id": "twitch",
+                "type": "url"
+            },
+            {
+                "name": "Youtube",
+                "id": "youtube",
+                "type": "url"
+            },
+            {
+                "name": "Instagram",
+                "id": "instagram",
+                "type": "url"
+            },
+            {
+                "name": "Twitter",
+                "id": "twitter",
+                "type": "url"
+            },
+            {
+                "name": "Homepage",
+                "id": "homepage",
+                "type": "url"
+            },
+            {
+                "name": "Auszahlung",
+                "id": "auszahlung",
+                "type": "email"
+            },
+            {
+                "name": "Team Passwort",
+                "id": "sa4fdgh578ujt",
+                "type": "password",
+                "disabled": true,
+                "readonly": true
+            },
+            {
+                "name": "Anzahl Spiele",
+                "id": "anzahl_spiele",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "Anzahl Siege",
+                "id": "anzahl_siege",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "Anzahl Turniere",
+                "id": "anzahl_turniere",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "1. Platz",
+                "id": "1_platz",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "2. Platz",
+                "id": "2_platz",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "3. Platz",
+                "id": "3_platz",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "type": "post",
+                "id": "erhaltene_awards_team",
+                "name": "Erhaltene Awards",
+                "post_type": [
+                    "award"
+                ],
+                "multiple": true
+            },
+            {
+                "type": "text",
+                "id": "team_nationalitaet",
+                "name": "Nationalitaet"
+            }
+        ],
+        "id": "acf_group_67ceaad95c41a",
+        "media_modal": false,
+        "modified": 1757319914,
+        "post_types": [
+            "team",
+            "attachment"
+        ],
+        "title": "Team Felder"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Tournament/Liga",
+                "id": "tournamentliga",
+                "type": "post",
+                "post_type": [
+                    "turnier",
+                    "liga",
+                    "matchmaker"
+                ],
+                "field_type": "select_advanced",
+                "add_new": false,
+                "multiple": true,
+                "select_all_none": false,
+                "parent": false,
+                "admin_columns": {
+                    "position": "after title",
+                    "sort": true,
+                    "link": "view"
+                }
+            },
+            {
+                "name": "Spielzeit",
+                "id": "spielzeit",
+                "type": "group",
+                "fields": [
+                    {
+                        "name": "Orginal",
+                        "id": "original",
+                        "type": "datetime",
+                        "save_format": "d.m.Y H:i",
+                        "timestamp": true,
+                        "inline": false,
+                        "js_options": {
+                            "dateFormat": "dd.mm.yy",
+                            "timeFormat": "HH:mm",
+                            "changeYear": true,
+                            "yearRange": "-1:+1",
+                            "changeMonth": true,
+                            "showButtonPanel": true,
+                            "firstDay": 1,
+                            "controlType": "select",
+                            "oneLine": true
+                        }
+                    },
+                    {
+                        "name": "home",
+                        "id": "home",
+                        "type": "datetime",
+                        "save_format": "d.m.Y H:i",
+                        "timestamp": true,
+                        "inline": false,
+                        "js_options": {
+                            "dateFormat": "dd.mm.yy",
+                            "timeFormat": "HH:mm",
+                            "changeYear": true,
+                            "yearRange": "-1:+1",
+                            "changeMonth": true,
+                            "showButtonPanel": true,
+                            "firstDay": 1,
+                            "controlType": "select",
+                            "oneLine": true
+                        }
+                    },
+                    {
+                        "name": "away",
+                        "id": "away",
+                        "type": "datetime",
+                        "save_format": "d.m.Y H:i",
+                        "timestamp": true,
+                        "inline": false,
+                        "js_options": {
+                            "dateFormat": "dd.mm.yy",
+                            "timeFormat": "HH:mm",
+                            "changeYear": true,
+                            "yearRange": "-1:+1",
+                            "changeMonth": true,
+                            "showButtonPanel": true,
+                            "firstDay": 1,
+                            "controlType": "select",
+                            "oneLine": true
+                        }
+                    },
+                    {
+                        "name": "Updated",
+                        "id": "updated",
+                        "type": "datetime",
+                        "save_format": "d.m.Y H:i",
+                        "timestamp": true,
+                        "inline": false,
+                        "js_options": {
+                            "dateFormat": "dd.mm.yy",
+                            "timeFormat": "HH:mm",
+                            "changeYear": true,
+                            "yearRange": "-1:+1",
+                            "changeMonth": true,
+                            "showButtonPanel": true,
+                            "firstDay": 1,
+                            "controlType": "select",
+                            "oneLine": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "name": "Runde Aktuell",
+                "id": "runde_aktuell",
+                "type": "text"
+            },
+            {
+                "name": "Runde Next Winner",
+                "id": "runde_next_winner",
+                "type": "post",
+                "post_type": [
+                    "match"
+                ],
+                "add_new": false,
+                "multiple": true,
+                "select_all_none": false,
+                "parent": false
+            },
+            {
+                "name": "Runde Next Looser",
+                "id": "runde_next_looser",
+                "type": "post",
+                "post_type": [
+                    "match"
+                ],
+                "add_new": false,
+                "multiple": true,
+                "select_all_none": false,
+                "parent": false
+            },
+            {
+                "name": "Runde Bracket",
+                "id": "runde_bracket",
+                "type": "text"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "name": "Home Team",
+                "id": "home_team",
+                "type": "post",
+                "post_type": [
+                    "team"
+                ],
+                "add_new": false,
+                "select_all_none": false,
+                "parent": false
+            },
+            {
+                "name": "Home Spieler",
+                "id": "home_spieler",
+                "type": "user",
+                "add_new": false,
+                "multiple": true,
+                "select_all_none": false
+            },
+            {
+                "name": "Home Score",
+                "id": "home_score",
+                "type": "text"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "name": "Away Team",
+                "id": "away_team",
+                "type": "post",
+                "post_type": [
+                    "team"
+                ],
+                "add_new": false,
+                "select_all_none": false,
+                "parent": false
+            },
+            {
+                "name": "Away Spieler",
+                "id": "away_spieler",
+                "type": "user",
+                "add_new": false,
+                "multiple": true,
+                "select_all_none": false
+            },
+            {
+                "name": "Away Score",
+                "id": "away_score",
+                "type": "text"
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "name": "Maps",
+                "id": "maps",
+                "type": "textarea",
+                "std": "Maps:\r\nWahlen:"
+            },
+            {
+                "name": "Lineup",
+                "id": "lineup",
+                "type": "checkbox",
+                "std": false
+            },
+            {
+                "name": "Mapban",
+                "id": "mapban",
+                "type": "checkbox",
+                "std": false
+            }
+        ],
+        "id": "acf_group_67c22923300c1",
+        "modified": 1762693439,
+        "post_types": [
+            "match"
+        ],
+        "title": "Matchfelder"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Games Vorschaubild",
+                "id": "headerbild",
+                "type": "single_image",
+                "image_size": "medium"
+            },
+            {
+                "name": "Headerbild Links",
+                "id": "headerbild_links",
+                "type": "single_image",
+                "image_size": "medium"
+            },
+            {
+                "name": "Header Backgroundimage",
+                "id": "header_backgroundimage",
+                "type": "single_image",
+                "image_size": "medium"
+            },
+            {
+                "name": "Game Logo",
+                "id": "game_logo",
+                "type": "single_image",
+                "image_size": "medium"
+            },
+            {
+                "name": "hashtag",
+                "id": "hashtag",
+                "type": "text"
+            }
+        ],
+        "id": "acf_group_67bf9b9008b67",
+        "modified": 1755296177,
+        "taxonomies": [
+            "game"
+        ],
+        "title": "Games Felder"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Verifiziert",
+                "id": "verifiziert",
+                "type": "date",
+                "std": 1735689600,
+                "save_format": "d.m.Y",
+                "timestamp": true,
+                "inline": false,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "changeYear": true,
+                    "yearRange": "-1:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true
+                },
+                "admin_columns": {
+                    "position": "after username",
+                    "title": "Verifiziert",
+                    "sort": true
+                }
+            },
+            {
+                "name": "Nationalität",
+                "id": "nationalitaet",
+                "type": "text"
+            },
+            {
+                "name": "Profilbild",
+                "id": "profilbild",
+                "type": "single_image",
+                "image_size": "medium"
+            },
+            {
+                "name": "Twitter",
+                "id": "twitter",
+                "type": "url"
+            },
+            {
+                "name": "Instagram",
+                "id": "instagram",
+                "type": "url"
+            },
+            {
+                "name": "Youtube",
+                "id": "youtube",
+                "type": "url"
+            },
+            {
+                "name": "Twitch",
+                "id": "twitch",
+                "type": "url"
+            },
+            {
+                "name": "Rocket League ID",
+                "id": "rocket_league_id",
+                "type": "text"
+            },
+            {
+                "name": "Activision ID",
+                "id": "activision_id",
+                "type": "text"
+            },
+            {
+                "name": "Ubisoft ID",
+                "id": "ubisoft_id",
+                "type": "text"
+            },
+            {
+                "name": "XBL ID",
+                "id": "xbl_id",
+                "type": "text"
+            },
+            {
+                "name": "PSN ID",
+                "id": "psn_id",
+                "type": "text"
+            },
+            {
+                "name": "Paypal",
+                "id": "paypal",
+                "type": "email"
+            },
+            {
+                "type": "heading",
+                "name": "Adressdaten",
+                "save_field": false
+            },
+            {
+                "name": "Adresse 1",
+                "id": "address_1",
+                "type": "text"
+            },
+            {
+                "name": "Adresse 2",
+                "id": "address_2",
+                "type": "text"
+            },
+            {
+                "name": "Stadt",
+                "id": "city",
+                "type": "text"
+            },
+            {
+                "name": "PLZ",
+                "id": "postcode",
+                "type": "text"
+            },
+            {
+                "name": "Country",
+                "id": "country",
+                "type": "text"
+            },
+            {
+                "name": "Telefon",
+                "id": "phone",
+                "type": "text"
+            },
+            {
+                "name": "Anzahl Spiele",
+                "id": "anzahl_spiele",
+                "type": "number",
+                "step": 1,
+                "std": 0,
+                "columns": 4
+            },
+            {
+                "name": "Anzahl Turniere",
+                "id": "anzahl_turniere",
+                "type": "number",
+                "std": 0,
+                "columns": 4
+            },
+            {
+                "name": "Anzahl Siege",
+                "id": "anzahl_siege",
+                "type": "number",
+                "step": 1,
+                "std": 0,
+                "columns": 4
+            },
+            {
+                "name": "1. Platz",
+                "id": "1_platz",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "2. Platz",
+                "id": "2_platz",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "name": "3. Platz",
+                "id": "3_platz",
+                "type": "number",
+                "columns": 4
+            },
+            {
+                "type": "post",
+                "id": "erhaltene_awards",
+                "name": "Erhaltene Awards",
+                "clone": true,
+                "sort_clone": true,
+                "post_type": [
+                    "award"
+                ],
+                "multiple": true
+            },
+            {
+                "name": "Header Background",
+                "id": "header_background",
+                "type": "single_image",
+                "image_size": "2048x2048"
+            },
+            {
+                "name": "Header Font Color",
+                "id": "header_font_color",
+                "type": "color",
+                "std": "#000000"
+            }
+        ],
+        "id": "acf_group_67bc6521024aa",
+        "modified": 1758712753,
+        "title": "User Fields",
+        "type": "user"
+    },
+    {
+        "$schema": "https://schemas.metabox.io/field-group.json",
+        "fields": [
+            {
+                "name": "Hintergrund Header",
+                "id": "hintergrund_header",
+                "type": "single_image",
+                "image_size": "medium",
+                "required": true
+            },
+            {
+                "name": "Format",
+                "id": "format",
+                "type": "select",
+                "options": {
+                    "Single KO": "Single KO",
+                    "Double KO": "Double KO"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Plattform",
+                "id": "plattform",
+                "type": "select",
+                "options": {
+                    "PC": "PC",
+                    "Konsole": "Konsole",
+                    "PC & Konsole": "PC & Konsole"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Startdatum und Zeit",
+                "id": "startdatum_und_zeit",
+                "type": "datetime",
+                "save_format": "d.m.Y H:i",
+                "timestamp": true,
+                "inline": false,
+                "required": true,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "timeFormat": "HH:mm",
+                    "changeYear": true,
+                    "yearRange": "-100:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true,
+                    "firstDay": 1,
+                    "controlType": "select",
+                    "oneLine": true
+                },
+                "admin_columns": {
+                    "position": "after title",
+                    "title": "Startdatum",
+                    "sort": true
+                }
+            },
+            {
+                "name": "Anmeldefrist",
+                "id": "anmeldefrist",
+                "type": "datetime",
+                "save_format": "d.m.Y H:i",
+                "timestamp": true,
+                "inline": false,
+                "required": true,
+                "js_options": {
+                    "dateFormat": "dd.mm.yy",
+                    "timeFormat": "HH:mm",
+                    "changeYear": true,
+                    "yearRange": "-100:+100",
+                    "changeMonth": true,
+                    "showButtonPanel": true,
+                    "firstDay": 1,
+                    "controlType": "select",
+                    "oneLine": true
+                }
+            },
+            {
+                "name": "Anzahl Teams",
+                "id": "anzahl_teams",
+                "type": "select",
+                "options": {
+                    "4": "4",
+                    "8": "8",
+                    "16": "16",
+                    "32": "32",
+                    "64": "64"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Modus",
+                "id": "modus",
+                "type": "select",
+                "options": {
+                    "1": "1on1",
+                    "2": "2on2",
+                    "3": "3on3",
+                    "4": "4on4",
+                    "5": "5on5",
+                    "6": "6on6"
+                },
+                "select_all_none": false,
+                "required": true
+            },
+            {
+                "name": "Preisgeld",
+                "id": "preisgeld",
+                "type": "group",
+                "fields": [
+                    {
+                        "name": "Gesamt",
+                        "id": "gesamt",
+                        "type": "number"
+                    },
+                    {
+                        "name": 1,
+                        "id": "platz_1",
+                        "type": "number"
+                    },
+                    {
+                        "name": 2,
+                        "id": "platz_2",
+                        "type": "number"
+                    },
+                    {
+                        "name": 3,
+                        "id": "platz_3",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "name": "Allgemeines Regelwerk",
+                "id": "regelwerk",
+                "type": "url"
+            },
+            {
+                "name": "Spiel Regelwerk",
+                "id": "regelwerk_spiel",
+                "type": "url"
+            },
+            {
+                "name": "Matches",
+                "id": "matches",
+                "type": "post",
+                "post_type": [
+                    "match"
+                ],
+                "add_new": false,
+                "multiple": true,
+                "select_all_none": false,
+                "parent": false
+            },
+            {
+                "name": "Gestartet",
+                "id": "gestartet",
+                "type": "switch",
+                "std": false
+            }
+        ],
+        "id": "acf_group_67b5c54010b45",
+        "media_modal": false,
+        "modified": 1762112511,
+        "post_types": [
+            "turnier",
+            "attachment"
+        ],
+        "title": "Turnierfelder"
+    }
+]

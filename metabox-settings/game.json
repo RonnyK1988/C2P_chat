@@ -1,0 +1,83 @@
+{
+    "post_title": "Game",
+    "settings": {
+        "taxonomy": "game",
+        "object_type": "",
+        "advanced_configuration": 1,
+        "import_source": "",
+        "import_date": "",
+        "labels": {
+            "name": "Games",
+            "singular_name": "Game",
+            "menu_name": "Games",
+            "all_items": "Alle Games",
+            "edit_item": "Game bearbeiten",
+            "view_item": "Game anzeigen",
+            "update_item": "Game aktualisieren",
+            "add_new_item": "Neu hinzufügen: Game",
+            "new_item_name": "Neuer Game-Name",
+            "search_items": "Games suchen",
+            "popular_items": "Beliebte Games",
+            "separate_items_with_commas": "Trenne games durch Kommas",
+            "add_or_remove_items": "games hinzufügen oder entfernen",
+            "choose_from_most_used": "Wähle aus den meistgenutzten games",
+            "most_used": "",
+            "not_found": "games konnten nicht gefunden werden",
+            "no_terms": "Keine games-Taxonomien",
+            "name_field_description": "",
+            "slug_field_description": "",
+            "desc_field_description": "",
+            "items_list_navigation": "Games-Listen-Navigation",
+            "items_list": "Games-Liste",
+            "back_to_items": "← Zu games gehen",
+            "item_link": "Game-Link",
+            "item_link_description": "Ein Link zu einer Taxonomie game",
+            "parent_item": "Parent Game",
+            "parent_item_colon": "Parent Game",
+            "filter_by_item": "Filter by Game"
+        },
+        "description": "",
+        "capabilities": {
+            "manage_terms": "manage_categories",
+            "edit_terms": "manage_categories",
+            "delete_terms": "manage_categories",
+            "assign_terms": "edit_posts"
+        },
+        "public": 1,
+        "publicly_queryable": 1,
+        "hierarchical": false,
+        "show_ui": 1,
+        "show_in_menu": 1,
+        "show_in_nav_menus": 1,
+        "show_in_rest": 1,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Terms_Controller",
+        "show_tagcloud": 1,
+        "show_in_quick_edit": 1,
+        "show_admin_column": false,
+        "rewrite": {
+            "slug": null,
+            "with_front": true,
+            "hierarchical": false
+        },
+        "query_var": true,
+        "query_var_name": "",
+        "default_term": {
+            "default_term_enabled": "0"
+        },
+        "sort": 0,
+        "meta_box": "disabled",
+        "meta_box_cb": false,
+        "meta_box_sanitize_cb": "",
+        "slug": "game",
+        "label": "Games",
+        "types": [
+            "liga",
+            "turnier"
+        ]
+    },
+    "post_date": "2025-06-25 01:03:25",
+    "post_status": "publish",
+    "post_type": "mb-taxonomy"
+}

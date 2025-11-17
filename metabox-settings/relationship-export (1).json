@@ -1,0 +1,248 @@
+[
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "matchmaker",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Eingetragene Spieler",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "user-mm",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "user",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Telgenommene Ligen",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "matchmaker",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Eingetragene Teams",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "team-mm",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "post",
+            "post_type": "team",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Telgenommene Ligen",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "liga",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Eingetragene Teams",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "team-liga",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "post",
+            "post_type": "team",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Telgenommene Ligen",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "liga",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Eingetragene Spieler",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "user-liga",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "user",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Telgenommene Ligen",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "team",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Team Captains",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "user-team-captain",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "user",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Captain im Team",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "team",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Team Mitglieder",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "user-team-mitglied",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "user",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Mitglied im Team",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "turnier",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Eingetragene Teams",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "team-turniere",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "post",
+            "post_type": "team",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Telgenommene Turniere",
+                "closed": false
+            },
+            "field": {
+                "add_new": false,
+                "query_args": {
+                    "order_by": "title"
+                }
+            }
+        }
+    },
+    {
+        "$schema": "https://schemas.metabox.io/relationships.json",
+        "delete_data": false,
+        "from": {
+            "object_type": "post",
+            "post_type": "turnier",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Eingetragene Spieler",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        },
+        "id": "user-turniere",
+        "modified": 1763330306,
+        "reciprocal": false,
+        "to": {
+            "object_type": "user",
+            "admin_filter": false,
+            "meta_box": {
+                "title": "Telgenommene Turniere",
+                "closed": false
+            },
+            "field": {
+                "add_new": false
+            }
+        }
+    }
+]
